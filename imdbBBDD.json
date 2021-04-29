@@ -1,1 +1,28 @@
-{"peliculas":[{"title":"Joker","releaseYear":2019,"nationality":"estadounidense","genre":"suspense"},{"title":"Parasito","releaseYear":2019,"nationality":"coreana","genre":"suspense"}]}
+{
+    "peliculas": [
+        {
+            "title": "Joker",
+            "releaseYear": 2019,
+            "nationality": "estadounidense",
+            "genre": "suspense"
+        },
+        {
+            "title": "Parasito",
+            "releaseYear": 2019,
+            "nationality": "coreana",
+            "genre": "suspense"
+        },
+        {
+            "title": "El grito",
+            "releaseYear": "1998",
+            "nationality": "coreana",
+            "genre": "terror"
+        },
+        {
+            "title": "spiderman",
+            "releaseYear": "2001",
+            "nationality": "yanki",
+            "genre": "marvel"
+        }
+    ]
+}

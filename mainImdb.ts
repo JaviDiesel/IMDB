@@ -8,9 +8,15 @@ let movie_2:Movie = new Movie('Parasito', 2019, 'coreana', 'suspense');
 let peliculas:Movie[] = [movie_1, movie_2];
 let imdb:Imdb = new Imdb(peliculas);
 
-console.log(imdb);
-
 let imdbJSON = JSON.stringify(imdb);
-console.log(imdbJSON);
 
-fs.writeFileSync('imdbBBDD.json', imdbJSON, {encoding:'utf8', flag:'a+', mode: 0o666});
+//escribir fichero
+//fs.writeFileSync('imdbBBDD.json', imdbJSON, {encoding:'utf8', flag:'a+', mode: 0o666});
+
+//leer fichero
+let JSONLeido = fs.readFileSync('imdbBBDD.json');
+JSONLeido = JSON.parse(JSONLeido);
+let ImdbLeido:Imdb = new Imdb(JSONLeido.peliculas);
+
+imdb.escribirEnFicheroJSON('pepe.json');
+console.log(imdb.obtenerInstanciaIMDB('pepe.json'));
